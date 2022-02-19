@@ -1,0 +1,14 @@
+def isprime(n):
+    for i in range(2,n):
+        if n%i==0:
+            return false
+    return true
+t=int(input('enter t value:'))  
+for i in range(t):
+n=int(input('enter n value:')) 
+c=0
+for i in range(2,n+1):
+    if isprime(i):
+        c=c+1
+print('Given no of prime')
+    
