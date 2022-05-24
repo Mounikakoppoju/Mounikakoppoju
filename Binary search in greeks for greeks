@@ -1,0 +1,18 @@
+def binarysearch(arr,l,u,k):
+    if u>1:
+        mid=l+(u-1)//2
+        if arr[mid]==k:
+            return mid
+        elif arr[mid]>k:
+            return binarysearch(arr,l,mid-1,k)
+        else:
+            return binarysearch(arr,mid+1,u,k)
+    else:
+        return -1
+arr=[2,3,4,10,40]
+k=4
+result=binarysearch (arr,0,len(arr),k)
+if result!==-1:
+    print("element is present at index",index)
+else:
+    print("element is not present in array")
