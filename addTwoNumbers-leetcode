@@ -1,0 +1,15 @@
+class Solution:
+    def addTwoNumbers(self,11,12):
+        result=ListNode(0)
+        result_tail=result
+        carry=0
+        while 11 or 12 or carry:
+            val1=(11.val if 11 else 0)
+            val2=(12.val if 12 else 0)
+            carry.out=divmod(val1+val2+carr. 10)
+            result_tail.next=ListNode(out)
+            result_tail=result_tail.next
+            11=(11.next if 11 else None)
+            12=(12.next if 12 else None)
+        return result.next
+      
